@@ -35,9 +35,10 @@ body {
     margin: auto;
     padding: 10px;
     overflow: hidden;
+    /*max-width: 1000px;*/
 }
 .box {
-    width: 340px;
+    width: 29%;
     height: 700px;
     border: 3px solid cadetblue;
     border-radius: 10px;
@@ -92,4 +93,34 @@ footer {
     background-color: cadetblue;
     text-align: center;
     padding: 5px 0px
+}
+
+/* responsive */
+
+@media screen and (max-width: 1021px) {
+    .figures {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .box {
+        margin: 7px;
+        width: 30%;
+    }
+    .box-main__input {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .box {
+        width: 85%;
+        margin: 20px;
+        height: auto;
+    }
+    .header-tittle {
+        font-size: 30px;
+    }
+    .answer p {
+        font-size: 20px;
+    }
 }
